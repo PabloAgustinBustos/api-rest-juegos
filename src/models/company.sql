@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Company (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(80) NOT NULL,
+  games_amount INTEGER DEFAULT 0
+);

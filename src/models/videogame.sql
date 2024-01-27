@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS Videogame (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  price NUMERIC(4,2) NOT NULL,
+
+  company_id SERIAL REFERENCES Company(id)
+);
